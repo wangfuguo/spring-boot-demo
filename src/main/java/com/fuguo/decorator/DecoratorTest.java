@@ -30,6 +30,15 @@ public class DecoratorTest {
 
         Collections.sort(list, strComp);
 
+        java.security.AccessController.doPrivileged(
+                new java.security.PrivilegedAction<Void>() {
+                    @Override
+                    public Void run() {
+                        return null;
+                    }
+                });
+
 
     }
+
 }
