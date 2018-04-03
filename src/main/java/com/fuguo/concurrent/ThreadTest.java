@@ -25,7 +25,13 @@ public class ThreadTest {
         });
         thread.start();
         thread1.start();
+        System.out.println(Integer.MAX_VALUE + 1 < Integer.MAX_VALUE);
+        Double d = 0.6332;
+        double dd = 0.6332;
 
+    }
+
+    public static void get() {
 
     }
 }
