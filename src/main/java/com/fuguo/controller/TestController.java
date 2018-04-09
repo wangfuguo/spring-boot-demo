@@ -19,6 +19,7 @@ public class TestController {
     @Autowired
     public MyBeanClass myBeanClass;
 
+    @SuppressWarnings("SpringJavaAutowiringInspection")
     @Autowired
     private Man man;
 

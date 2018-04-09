@@ -10,6 +10,14 @@ import java.util.Arrays;
  */
 public class BinarySearch {
 
+    /**
+     * 递归进行二分查找
+     * @param arr
+     * @param left
+     * @param right
+     * @param key
+     * @return
+     */
     public static int binarySearch(Integer[] arr, int left, int right, Integer key) {
         if(left < right) {
             int partition = partition(arr, left, right);
@@ -24,6 +32,13 @@ public class BinarySearch {
         return 0;
     }
 
+    /**
+     * 按照枢轴分数组元素
+     * @param arr
+     * @param left
+     * @param right
+     * @return
+     */
     public static int partition(Integer[] arr, int left, int right) {
         int temp = left - 1;
         for(int i = left; i < right; i++) {
@@ -36,6 +51,12 @@ public class BinarySearch {
         return temp + 1;
     }
 
+    /**
+     * 交换数组元素
+     * @param arr
+     * @param i
+     * @param j
+     */
     public static void swap(Integer[] arr, int i, int j) {
         Integer temp = arr[i];
         arr[i] = arr[j];
